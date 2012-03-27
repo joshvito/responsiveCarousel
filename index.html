@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>responsiveCarousel Demo</title>
+<link rel="stylesheet" type="text/css" href="../reset/css/style.css">
+<style type="text/css">
+html, body {
+font: normal 100% Helvetica, Arial, sans-serif;
+width:100%;
+height:100%;
+}
+
+h1{
+font-size:1.5em;	
+}
+
+.copy{
+font-size:0.875em;	
+}
+
+.clear{
+clear:both;	
+}
+
+#page{	
+display:block;
+margin:0 auto;
+width:95%;
+height:95%;
+}
+
+.carousel_container{
+margin:0;
+border:.1em solid red;	
+display:block;
+width:100%;
+height:50%;
+overflow:hidden;
+}
+
+.carousel_slides{ /*width is 100xslide count */
+/*width:300%;*/
+height:100%;	
+position:relative;
+}
+
+.carousel_buttons .prev, .carousel_buttons .next{
+text-decoration:none;
+float:left;	
+width:1em;
+height:1em;
+padding:3em;
+position:relative;
+top:-20em;
+z-index:5000;
+display:inline;
+background:rgb(128,130,133);
+background:rgba(128,130,133,.65);
+color:rgb(255,255,255);
+color:rgba(255,255,255,.8);
+-webkit-border-radius: 4em;
+-moz-border-radius: 4em;
+border-radius: 4em;
+}
+
+.carousel_buttons .next{ float:right;	}
+
+.slide{
+display:block;
+/*width:33.3333%;*/
+height:100%;
+float:left;
+}
+
+.green {background-color:#0F0;}
+.yellow{background-color:yellow;}
+.blue{background-color:cyan;}
+
+</style>
+<script src="../reset/js/modernizr-1.7.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="../selectivizr-1.0.2/selectivizr-min.js"></script>
+  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+<![endif]-->
+</head>
+<body>
+<div id="page">
+    <div id="carousel" class="carousel_container">
+    
+    	<div id="carousel_slides" class="carousel_slides">
+            <div class="slide green"><h1>Title 1</h1><span class="copy">This is a subheadline</span><img src="" alt="" class="" /></div>
+            <div class="slide yellow"><h1>Title 2</h1><span class="copy">This is a subheadline</span><img src="" alt="" class="" /></div>
+            <div class="slide blue"><h1>Title 3</h1><span class="copy">This is a subheadline</span><img src="" alt="" class="" /></div>
+        </div>
+
+    </div>
+    <div id="carousel_buttons" class="carousel_buttons">
+        <a href="#" id="prev" class="prev">&lt;</a>
+        <a href="#" id="next" class="next">&gt;</a>
+        <div class="clear"></div>		
+    </div>
+</div><!-- end id page -->
+<script src="js/jquery.responsiveCarousel.js"></script>
+<script type="text/javascript">
+/* trigger when page is ready */
+$(document).ready(function (){
+	
+	//$('body').responsiveCarousel({carouselFrameId:'#carousel_break'});
+	$('#carousel').responsiveCarousel({speed:8000, frameRatio:2.35});
+		
+});<!-- end doc ready -->
+</script>
+</body>
+</html>

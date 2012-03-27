@@ -1,0 +1,22 @@
+=== Plugin Name ===
+Contributors: josh vito	
+Donate link: http://donate.joshvito.com/
+Tags: responsive, carousel, responsiveCarousel
+Requires at least: jQuery 1.4.3+
+
+
+This is a JQUERY based carousel plugin built with a "responsive" design
+
+== Description ==
+
+need to add long description here
+
+== Install Instructions ==
+
+
+== License ==
+GNU GENERAL PUBLIC LICENSE
+ - see document in root labeled "license"
+
+MIT License
+ - see document in root labeled MIT_license
