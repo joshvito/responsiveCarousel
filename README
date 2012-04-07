@@ -17,7 +17,7 @@ This was created as an alternative to the more complex carousel plugins floating
 2.	The structure of your HTML will need to be similar to the example included in this repo.
 	See 'index.html' for example html and css.
     See 'img/help_structure_img01.jpg' for deatils on classes and the structure of the carousel
-3.	Visit the example page at http://www.joshvito.com/sandbox/responsiveCarousel/
+3.	Visit the example page at http://sandbox.joshvito.com/responsiveCarousel/
 
 
 == License ==
