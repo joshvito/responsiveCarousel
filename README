@@ -1,17 +1,23 @@
 === Plugin Name ===
 Contributors: josh vito	
-Donate link: http://donate.joshvito.com/
-Tags: responsive, carousel, responsiveCarousel
+Donate link: http://donate.joshvito.com //coming soon
+Tags: responsive, carousel, responsiveCarousel, jQuery, 
 Requires at least: jQuery 1.4.3+
 
 
-This is a JQUERY based carousel plugin built with a "responsive" design
+This is a JQUERY based carousel plugin built with a responsive design
 
 == Description ==
 
-need to add long description here
+This was created as an alternative to the more complex carousel plugins floating around the inter-webs.  This is a simple carousel that scrolla left to right/right to left and the "slides" can be made up of anything the developer wants to scroll. This way the developer can scroll H1 and H2 content that is not in an image. I image this is better for SEO purposes.
 
 == Install Instructions ==
+1. 	Include the JQUERY plugin code after you call the jQuery libreary.
+	Ex. '<script src="js/jquery.responsiveCarousel.js"></script>'
+2.	The structure of your HTML will need to be similar to the example included in this repo.
+	See 'index.html' for example html and css.
+    See 'img/help_structure_img01.jpg' for deatils on classes and the structure of the carousel
+3.	Visit the example page at http://www.joshvito.com/sandbox/responsiveCarousel/
 
 
 == License ==
